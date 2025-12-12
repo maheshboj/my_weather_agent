@@ -11,8 +11,8 @@ COPY agent.py .
 COPY langgraph.json .
 COPY .env .
 
-# Expose port 8000
-EXPOSE 8000
+# Expose port 80
+EXPOSE 80
 
 # Run LangGraph API
 CMD ["langgraph", "api", "server"]
